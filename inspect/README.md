@@ -19,14 +19,28 @@ Open a log viewer in your browser.
 inspect view
 ```
 
+### HotpotQA
+https://huggingface.co/datasets/hotpotqa/hotpot_qa
 
-### Multi-Hop
 To solve using chain-of-thought, run the following.
 ```bash
-inspect eval hotpotqa.py --limit 5 --model=openai/gpt-4o-mini
+inspect eval hotpotqa.py --limit 100 --model=openai/gpt-4o-mini
 ```
 
 To solve directly (without chain-of-thought), run the following:
 ```bash
-inspect eval hotpotqa.py --limit 5 --model=openai/gpt-4o-mini -T solver_name=direct
+inspect eval hotpotqa.py --limit 100 --model=openai/gpt-4o-mini -T solver_name=direct
+```
+
+### MoreHopQA
+https://huggingface.co/datasets/alabnii/morehopqa
+
+To solve using chain-of-thought, run the following.
+```bash
+inspect eval morehopqa.py --limit 100 --model=openai/gpt-4o-mini
+```
+
+To solve directly (without chain-of-thought), run the following:
+```bash
+inspect eval morehopqa.py --limit 100 --model=openai/gpt-4o-mini -T solver_name=direct
 ```
