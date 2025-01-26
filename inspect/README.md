@@ -65,5 +65,5 @@ inspect eval morehopqa.py --limit 100 --model=openai/gpt-4o-mini -T solver_name=
 
 | Solver            | Average Accuracy | Accuracy Range | Tokens Processed       | Total Time (Avg) |
 |-------------------|------------------|----------------|------------------------|------------------|
-| Chain-of-Thought  | 66%              | 63%-69%        | ~399,300 (Input: ~372,600, Output: ~27,000) | ~46 seconds     |
-| Direct            | 41%              | 40%-43%        | ~280,800 (Input: ~280,200, Output: ~630)    | ~6.3 seconds    |
+| Chain-of-Thought (5-shot)  | 66%              | 63%-69%        | 399,621 (Input: 372,603, Output: 27,018) | 45.66 seconds     |
+| Direct (5-shot)           | 41%              | 40%-43%        | 280,839 (Input: 280,203, Output: 636)    | 6.33 seconds    |
